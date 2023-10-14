@@ -4,16 +4,18 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "npx tailwindcss -i ./src/main.scss -o ./dist/style.css --watch",
+    "start": "npm-run-all -p tailwind postcss",
+    "tailwind": "npx tailwindcss -i ./public/tailwind.css -o ./dist/style.css --watch",
+    "postcss": "postcss src/main.scss -o dist/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
-    "autoprefixer": "^10.4.16",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.1",
     "tailwindcss": "^3.3.3"
