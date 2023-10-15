@@ -4,11 +4,16 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     colors: {
-      primary: 'var(--color-primary)',
-      secondary: 'rgb(var(--color-secondary) / 56)',
-      tertiary: 'rgb(var(--color-tertiary) / 85)'
+      primary: 'rgb(var(--color-primary) / <alpha-value>)',
+      secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+      tertiary: 'rgb(var(--color-tertiary) / <alpha-value>)',
+      katt: 'rgb(var(--color-katt) / <alpha-value>)'
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        DEFAULT: '0 4px 4px rgb(var(--color-katt) / 0.5)'
+      }
+    },
   },
   plugins: [],
 }
