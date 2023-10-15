@@ -1,0 +1,21 @@
+.carousel {
+	@apply flex flex-col items-center my-10;
+
+	&__header {
+		@apply self-start;
+	}
+
+	&__content {
+		@apply flex basis-full gap-4 mb-5 mt-2;
+	}
+
+	&__controls {
+		button {
+			@apply bg-primary/50 p-3 m-3 rounded-full;
+
+			&.button--selected {
+				@apply bg-katt-light;
+			}
+		}
+	}
+}
