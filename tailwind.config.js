@@ -11,7 +11,8 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        DEFAULT: '0 4px 4px rgb(var(--color-katt) / 0.5)'
+        DEFAULT: '0 4px 4px rgb(var(--color-katt) / 0.5)',
+        lg: '0 4px 4px rgb(var(--color-katt) / 0.6)'
       }
     },
   },
