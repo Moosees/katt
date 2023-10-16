@@ -1,8 +1,11 @@
 header {
 	display: flex;
+	align-items: flex-end;
 	background-image: linear-gradient(#f380a9, white);
 
-	font-family: sans-serif;
+	button {
+		@apply lg:hidden;
+	}
 }
 
 .logo1,
@@ -57,14 +60,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-button {
-	display: none;
-}
-
-#check {
-	display: none;
-}
-
 @media (max-width: 900px) {
 	header {
 		height: 19vh;
@@ -80,19 +75,6 @@ button {
 		position: absolute;
 		top: 12vh;
 		left: 0.7rem;
-	}
-
-	button {
-		display: block;
-		position: absolute;
-		left: 40%;
-		top: 16vh;
-		background-image: linear-gradient(white, #f698ba);
-		border: none;
-		border-radius: 50%;
-		padding: 0.5rem 1rem;
-		box-shadow: 0 0.1rem #ff4545;
-		cursor: pointer;
 	}
 
 	nav ul {
