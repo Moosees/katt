@@ -1,7 +1,7 @@
 .card {
 	@apply shadow bg-gradient-to-b from-secondary/50 px-2 py-4;
 
-	&:nth-child(2) {
+	&:nth-child(odd) {
 		@apply bg-gradient-to-t;
 	}
 
