@@ -1,5 +1,110 @@
 header {
-	nav {
-		@apply mt-8;
+	display: flex;
+	background-image: linear-gradient(#f380a9, white);
+
+	font-family: sans-serif;
+}
+
+.logo1,
+.logo2 {
+	height: 20vh;
+	width: auto;
+	padding: 1rem;
+}
+
+.logo2 {
+	right: 1rem;
+	position: absolute;
+}
+
+.event {
+	background-color: #fac4d7;
+	width: 280px;
+	height: 80px;
+	padding: 1rem;
+	margin-top: 13vh;
+	border-radius: 17px;
+	position: absolute;
+	left: 20vw;
+}
+
+.event p {
+	text-align: center;
+}
+
+nav {
+	position: absolute;
+	right: 10vw;
+	top: 24vh;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	margin-right: 1rem;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+button {
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	header {
+		height: 19vh;
+		margin-bottom: 0;
+	}
+
+	.logo1,
+	.logo2 {
+		height: 15vh;
+	}
+
+	.event {
+		position: absolute;
+		top: 12vh;
+		left: 0.7rem;
+	}
+
+	button {
+		display: block;
+		position: absolute;
+		left: 40%;
+		top: 16vh;
+		background-image: linear-gradient(white, #f698ba);
+		border: none;
+		border-radius: 50%;
+		padding: 0.5rem 1rem;
+		box-shadow: 0 0.1rem #ff4545;
+		cursor: pointer;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		padding-top: 3rem;
+		gap: 2rem;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #f599b9;
+		left: -100%;
+		text-align: center;
 	}
 }
