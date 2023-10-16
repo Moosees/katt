@@ -1,3 +1,10 @@
-h1 {
-	@apply p-5;
+main {
+	@apply flex flex-col items-center;
+
+	
+	@media (min-width: 800px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 15rem;
+		grid-template-rows: 3fr 2fr 1fr;
+	}
 }
