@@ -1,5 +1,5 @@
 header {
-	background-image: linear-gradient(#f380a9, white);
+	@apply bg-gradient-to-b from-primary;
 }
 
 .logo-container {

@@ -1,14 +1,13 @@
 .nobel-container {
+	@apply bg-gradient-to-b from-secondary/50 shadow;
+
 	height: 20vh;
 	width: 70vw;
 	margin: 20px;
 	margin-left: 50px;
-	box-shadow: -2px 0px 5px rgb(250, 196, 215);
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background: rgb(246, 132, 201);
-	background: linear-gradient(180deg, rgba(246, 132, 201, 0.56) 35%, rgba(255, 255, 255, 1) 100%);
 
 }
 
@@ -27,6 +26,7 @@
 
 }
 
+/*
 .read-more-btn {
 	height: 3vh;
 	width: 15vw;
@@ -39,3 +39,4 @@
 	margin-top: 10px;
 	margin-left: 200px;
 }
+*/

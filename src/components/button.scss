@@ -1,5 +1,5 @@
 button {
-	@apply bg-gradient-to-t from-primary px-10 py-2 shadow rounded-[100%] transition;
+	@apply bg-gradient-to-t from-primary px-6 py-1 shadow rounded-[100%] transition sm:px-10 sm:py-2;
 
 	&:hover {
 		@apply scale-105 shadow-lg;
