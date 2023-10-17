@@ -1,5 +1,5 @@
 header {
-	@apply bg-gradient-to-b from-primary;
+	@apply mb-10 sticky top-0 bg-gradient-to-b from-primary to-white;
 }
 
 .logo-container {
@@ -8,55 +8,32 @@ header {
 	.logo1,
 	.logo2 {
 		width: 5rem;
+
+		@media (min-width: 768px) {
+			width: 10rem;
+		}
 	}
 }
 
 .nav-container {
-	@apply flex flex-col items-center;
+	@apply flex flex-col items-center md:items-end;
 	position: relative;
 
-	button {
-		@apply lg:hidden;
-	}
-
 	.event {
+		/* eventrutan är dold för tillfället */
+		display: none;
 		background-color: #fac4d7;
 		padding: 1rem;
 
-		@media (min-width: 800px) {
+		p {
+			text-align: center;
+		}
+
+	}
+
+	.nav-button {
+		@media (min-width: 768px) {
 			display: none;
 		}
-	}
-
-	.event p {
-		text-align: center;
-	}
-
-	nav {
-		display: none;
-		list-style: none;
-
-		@media (min-width: 800px) {
-			display: inline-block;
-		}
-
-		ul {
-			@apply flex;
-		}
-	}
-
-
-	a {
-		margin-right: 1rem;
-	}
-
-	a:link {
-		text-decoration: none;
-	}
-
-	a:hover {
-		color: red;
-		text-decoration: underline;
-
 	}
 }
