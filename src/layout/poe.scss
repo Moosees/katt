@@ -1,24 +1,23 @@
-.hero-poe-wrapper {
-	height: 50vh;
-	width: 70vw;
 
-}
-
-.hero-poe-container {
+.book {
 	@apply bg-gradient-to-b from-secondary/50 shadow;
 
 	max-height: 50vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+
+	&book__cover {
+			max-width: 25vw;
+
+		}
+
+	&book__summary {
+		font-size: .5rem;
+		align-self: flex-start;
+	}
+
 }
 
-.book-cover-veckans-tips {
-	max-width: 25vw;
 
-}
 
-.poe-blurb {
-	font-size: .5rem;
-	align-self: flex-start;
-}
