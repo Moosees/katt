@@ -1,29 +1,18 @@
 .nobel-container {
 	@apply bg-gradient-to-b from-secondary/50 shadow;
 
-	height: 20vh;
-	width: 70vw;
-	margin: 20px;
-	margin-left: 50px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 
+	max-width: 70vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-
-
-.nobel {}
-
 .nobel img {
-	height: 12vh;
-	width: 50vw;
+	max-width: 100%;
+	align-self: center;
 	justify-self: center;
-	margin-top: 10px;
-	margin-left: 40px;
-
-
-
+	
 }
 
 /*

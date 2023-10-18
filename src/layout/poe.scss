@@ -7,27 +7,18 @@
 .hero-poe-container {
 	@apply bg-gradient-to-b from-secondary/50 shadow;
 
-	height: 20vh;
-	width: 70vw;
-	margin: 20px;
-	margin-left: 50px;
+	max-height: 50vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
 
 .book-cover-veckans-tips {
-	height: 18vh;
-	width: 25vw;
-	margin-bottom: 50px;
-	margin-left: 20px;
+	max-width: 25vw;
+
 }
 
 .poe-blurb {
-	font-size: 9px;
+	font-size: .5rem;
 	align-self: flex-start;
-	margin-top: 15px;
-	margin-left: 5px;
-	margin-right: 5px;
-
 }
