@@ -2,22 +2,33 @@
 .book {
 	@apply bg-gradient-to-b from-secondary/50 shadow;
 
-	max-height: 50vh;
+	max-width: 70vw;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 
 	&book__cover {
-			max-width: 25vw;
+
+		max-width: 25vw;
 
 		}
+	&book__wrap {
+		display: flex;
+
+	}
+
+	&book__headline {
+		align-self: center;
+		justify-self: flex-end;
+
+
+
+	}
 
 	&book__summary {
 		font-size: .5rem;
-		align-self: flex-start;
-	}
+		align-self: flex-end;
 
-}
+
+	}
 
 
 
