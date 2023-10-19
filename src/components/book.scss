@@ -4,16 +4,19 @@
 	max-width: 60rem;
 	display: flex;
 	flex: 1 1 100%;
+	border-radius: var(--border-radius);
 
 	&__cover {
 		align-self: center;
 		max-width: 5rem;
 		flex-shrink: 0;
+		border-radius: var(--border-radius);
+		overflow: hidden;
 
 		@media (min-width: 440px) {
 			max-width: 9rem;
 		}
-		
+
 		@media (min-width: 768px) {
 			max-width: 25rem;
 			position: relative;

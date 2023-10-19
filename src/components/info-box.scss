@@ -1,9 +1,10 @@
 .info-box {
 	@apply p-5 bg-gradient-to-b from-secondary/50 shadow;
-	
+
 	max-width: 25rem;
 	display: flex;
 	flex-direction: column;
+	border-radius: var(--border-radius);
 
 	img {
 		object-fit: cover;

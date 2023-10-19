@@ -1,8 +1,12 @@
 .card {
-	@apply shadow bg-gradient-to-b from-secondary/50 px-2 py-4;
+	@apply shadow bg-gradient-to-b from-secondary/50 px-2 py-4 rounded-md;
 
 	&:nth-child(odd) {
 		@apply bg-gradient-to-t;
+	}
+
+	img {
+		@apply rounded-md;
 	}
 
 	h3 {
