@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "npm-run-all -p tailwind postcss",
-    "buildtw": "npx tailwindcss -i ./public/tailwind.css -o ./public/build.css --minify",
+    "buildtw": "npx tailwindcss -i ./public/tailwind.css -o ./build.css --minify",
     "tailwind": "npx tailwindcss -i ./public/tailwind.css -o ./dist/style.css --watch",
     "postcss": "postcss src/main.scss -o dist/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
