@@ -1,0 +1,15 @@
+.info-box {
+	@apply bg-gradient-to-b from-secondary/50 shadow;
+
+	max-width: 70vw;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		max-width: 100%;
+	}
+
+	button {
+		margin-left: auto;
+	}
+}

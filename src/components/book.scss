@@ -1,0 +1,24 @@
+.book {
+	@apply bg-gradient-to-b from-secondary/50 shadow;
+
+	max-width: 70vw;
+	display: flex;
+
+	&__cover {
+		max-width: 25vw;
+	}
+
+	&__wrap {
+		display: flex;
+	}
+
+	&__headline {
+		align-self: center;
+		justify-self: flex-end;
+	}
+
+	&__summary {
+		font-size: .5rem;
+		align-self: flex-end;
+	}
+}
