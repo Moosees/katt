@@ -1,5 +1,8 @@
 aside {
     .asid-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         margin-top: 1rem;
         padding: 1rem;
         border-radius: 6px;
@@ -34,6 +37,8 @@ aside {
     }
 
     .fler {
+        margin-top: 1rem;
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
@@ -47,19 +52,5 @@ aside {
         }
     }
 
-    .fler-outside {
-        display: flex;
 
-        @media (min-width: 768px) {
-            display: none;
-        }
-    }
-
-    .fler-aside {
-        display: none;
-
-        @media (min-width: 768px) {
-            display: flex;
-        }
-    }
 }
