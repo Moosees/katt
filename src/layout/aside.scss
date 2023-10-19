@@ -1,0 +1,65 @@
+aside {
+    .asid-cont {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .evenemang {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .tid {
+            h3 {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .fler {
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            align-self: flex-start;
+            color: red;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .fler-outside {
+        display: flex;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    .fler-aside {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+}

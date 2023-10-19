@@ -1,5 +1,7 @@
 .carousel {
-	@apply flex flex-col items-center my-10 mx-2 max-w-full w-full xl:w-2/5;
+	@apply flex flex-col items-center my-10 mx-2 w-full;
+	place-self: stretch;
+	overflow: hidden;
 
 	&__header {
 		@apply self-start;

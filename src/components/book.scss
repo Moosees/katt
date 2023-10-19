@@ -1,24 +1,73 @@
 .book {
 	@apply bg-gradient-to-b from-secondary/50 shadow;
 
-	max-width: 70vw;
+	max-width: 60rem;
 	display: flex;
+	flex: 1 1 100%;
 
 	&__cover {
-		max-width: 25vw;
+		align-self: center;
+		max-width: 5rem;
+		flex-shrink: 0;
+
+		@media (min-width: 440px) {
+			max-width: 9rem;
+		}
+		
+		@media (min-width: 768px) {
+			max-width: 25rem;
+			position: relative;
+			translate: 2rem -3rem;
+		}
+
+		img {
+			object-fit: cover;
+		}
 	}
 
 	&__wrap {
 		display: flex;
+		flex-direction: column;
+		padding: 1rem 0.5rem;
+
+		@media (min-width: 768px) {
+			padding: 1rem 1rem 1rem 4rem;
+			position: relative;
+			translate: 0 -2.6rem;
+		}
+
+		@media (min-width: 1280px) {
+			position: relative;
+			translate: 0 -3.2rem;
+		}
 	}
 
 	&__headline {
-		align-self: center;
-		justify-self: flex-end;
+		font-size: 1rem;
+
+		@media (min-width: 440px) {
+			font-size: 1.1rem;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 1.5rem;
+		}
+
+		@media (min-width: 1280px) {
+			font-size: 2rem;
+		}
 	}
 
 	&__summary {
-		font-size: .5rem;
-		align-self: flex-end;
+		margin-top: 1rem;
+		font-size: 0.7rem;
+
+		@media (min-width: 440px) {
+			font-size: 0.8rem;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 1rem;
+		}
 	}
 }

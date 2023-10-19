@@ -1,14 +1,24 @@
 main {
-	@apply flex flex-col items-center;
+	@apply flex flex-col items-center mx-1 md:mx-2 xl:mx-10 xl:my-20;
 
 	@media (min-width: 768px) {
 		display: grid;
-		grid-template-columns: 1fr 3fr 3fr 1fr;
+		grid-template-columns: 2fr 3fr 3fr 2fr;
 		grid-template-areas:
-			". hero hero aside"
-			"fav fav news news"
-			". info mail .";
+		"book book book aside"
+		"fav fav news news"
+		". info mail .";
 		place-items: center;
+		gap: 1rem;
+	}
+	
+	@media (min-width: 1280px) {
+		grid-template-columns: 3fr 3fr 1fr;
+		grid-template-areas:
+			"book book aside"
+			"fav news aside"
+			"info mail .";
+		gap: 2rem;
 	}
 
 }
