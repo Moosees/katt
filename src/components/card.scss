@@ -17,7 +17,7 @@
 		@apply text-sm md:text-base mb-1;
 		
 		a {
-			@apply text-katt;
+			@apply text-katt hover:underline;
 		}
 	}
 
