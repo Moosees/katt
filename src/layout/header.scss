@@ -3,12 +3,14 @@ header {
 }
 
 .logo-container {
-	@apply flex justify-around;
+	@apply flex justify-between;
 
 	.logo1,
 	.logo2 {
 		width: 5rem;
-
+		margin-top: 0.5rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
 		@media (min-width: 768px) {
 			width: 10rem;
 		}
