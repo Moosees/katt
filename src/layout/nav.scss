@@ -24,6 +24,12 @@
 		border-radius: 10px;
 		box-shadow: 0 0 5px 10px #faabc7d8; 
 
+		@media (orientation: landscape){
+			flex-direction: row;
+			margin-top: 11vh;
+			height: fit-content;
+		}
+
 		@media (min-width: 768px) {
 			flex-direction: row;
 			width: auto;
@@ -47,5 +53,7 @@
 
 	&--show {
 		display: block;
+
+		
 	}
 }
