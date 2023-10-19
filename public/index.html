@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../dist/style.css" />
 	<script src="./app.js" defer></script>
-	<title>Parmar och poesi och katt</title>
+	<title>Parmar och Poesi</title>
 </head>
 
 <body>
@@ -20,16 +20,16 @@
 			<button class="nav-button">Meny</button>
 			<nav class="nav-menu">
 				<ul>
-					<li><a href="#">HEM</a></li>
-					<li><a href="#">EVENEMANG</a></li>
-					<li><a href="#">VÅRAN BOKHANDEL</a></li>
-					<li><a href="#">KONTAKTA OSS</a></li>
+					<li><a href="#">Hem</a></li>
+					<li><a href="#">Evenemang</a></li>
+					<li><a href="#">Vår bokhandel</a></li>
+					<li><a href="#">Kontakta oss</a></li>
 				</ul>
 			</nav>
-			<article class="event">
+			<!-- <article class="event">
 				<p>Nästa event: 2053-02-15</p>
 				<p>Kom hit!</p>
-			</article>
+			</article> -->
 		</div>
 	</header>
 
@@ -139,7 +139,7 @@
 
 		<section style="grid-area: info" class="info-box">
 			<img src="./imgs/nobel.png" alt="Bild på vinnaren av Nobelpriset i litteratur: Jon Fosse" /><button
-				class="read-more__button">Läs mer</button>
+				class="read-more__button" aria-label="Läs mer om Jon Fosse">Läs mer</button>
 		</section>
 
 		<section style="grid-area: news" class="carousel">
@@ -247,10 +247,10 @@
 			class=" p-7 mb-16 mt-7 md:my-0 bg-gradient-to-b from-secondary/50 rounded-md shadow">
 
 			<form action="" name="nyhetsbrev" class=" flex flex-col items-center justify-center">
-				<label for="email" class="font-semibold">Prenummerera på vår nyhetsbrev</label>
+				<label for="email" class="font-semibold">Prenumerera på vårt nyhetsbrev</label>
 				<input type="email" placeholder="E-postadress" id="email" autocomplete="off"
 					class=" lg:min-w-[22rem] px-6 py-1 my-6 rounded-full   focus:outline-none placeholder:text-secondary">
-				<button>Skicka</button>
+				<button type="submit">Skicka</button>
 			</form>
 
 		</section>
@@ -261,16 +261,16 @@
 
 			<article class=" text-center flex flex-col   md:flex-row items-center justify-center md:space-x-10 ">
 				<div class="mb-2 md:mb-0">
-					<h4 class="text-lg font-semibold">Adress</h4>
+					<h2 class="text-lg font-semibold">Adress</h2>
 					<p class="text-xs">Brunnsgatan xx</p>
 					<p class="text-xs"> 19xxx Stockholm</p>
 				</div>
 				<div>
-					<h4 class="font-semibold">Telefon</h4>
+					<h2 class="font-semibold">Telefon</h2>
 					<p>07xxxxxxx</p>
 				</div>
 				<div class="hidden md:inline-block">
-					<h4 class="font-semibold ">Öppettider</h4>
+					<h2 class="font-semibold ">Öppettider</h2>
 					<p class="text-xs">MÅN-FRE: 00:00 till 00:00</p>
 					<p class="text-xs">LÖR-SÖN: 00:00 till 00:00</p>
 				</div>
@@ -282,7 +282,7 @@
 
 			<article class=" flex flex-col items-center md:flex-row-reverse justify-center md:gap-10  ">
 				<div class="">
-					<p class="text-center font-semibold">Följa oss</p>
+					<p class="text-center font-semibold">Följ oss</p>
 					<ul class="flex p-2 gap-2">
 						<li class="hover:-translate-y-1 ease-linear duration-300">
 							<a href="#">
@@ -308,7 +308,7 @@
 					</ul>
 				</div>
 				<div class=" text-center ">
-					<h4 class="font-semibold">Epost</h4>
+					<h2 class="font-semibold">Epost</h2>
 					<p class="text-xs ">exampel@gmail.com</p>
 				</div>
 
