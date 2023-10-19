@@ -1,5 +1,5 @@
 main {
-	@apply flex flex-col items-center mx-1 md:mx-2 xl:mx-10 xl:my-20;
+	@apply flex flex-col items-center mx-1 my-4 md:mx-2 xl:mx-10 xl:my-20;
 
 	@media (min-width: 768px) {
 		display: grid;
@@ -7,7 +7,7 @@ main {
 		grid-template-areas:
 		"book book book aside"
 		"fav fav news news"
-		". info mail .";
+		"info info mail mail";
 		place-items: center;
 		gap: 1rem;
 	}
