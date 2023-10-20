@@ -9,7 +9,7 @@ main {
 		"fav fav news news"
 		"info info mail mail";
 		place-items: center;
-		gap: 1rem;
+		gap: 2rem 1rem;
 	}
 	
 	@media (min-width: 1280px) {
@@ -18,7 +18,7 @@ main {
 			"book book aside"
 			"fav news aside"
 			"info mail .";
-		gap: 2rem;
+		gap: 5rem 2rem;
 	}
 
 }

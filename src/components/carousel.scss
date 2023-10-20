@@ -6,13 +6,13 @@
 	@media (min-width: 768px) {
 		margin: 0;
 	}
-	
+
 	&__header {
-		@apply self-start text-lg ml-5;
+		@apply self-start text-lg ml-5 lg:font-semibold;
 	}
-	
+
 	&__content {
-		@apply flex pb-4 pt-1 overflow-x-scroll w-full snap-x snap-mandatory scroll-smooth;
+		@apply flex pb-3 overflow-x-scroll w-full snap-x snap-mandatory scroll-smooth;
 		flex: 1 1 100%;
 	}
 
@@ -22,13 +22,10 @@
 }
 
 .carousel__button {
-	@apply bg-primary/50 aspect-square w-6 rounded-full;
-
-	&:nth-child(even) {
-		@apply xs:hidden;
-	}
-
-	&--selected {
-		@apply bg-katt-light;
-	}
+	@apply bg-primary/50 aspect-square w-12 rounded-full bg-katt-light/80;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 2rem;
 }
