@@ -1,12 +1,38 @@
 .card {
-	@apply shadow bg-gradient-to-b from-secondary/50 px-2 py-4 rounded-md;
-
+	@apply shadow bg-gradient-to-b from-secondary/50 px-2 py-4 rounded-md snap-start;
+	flex-shrink: 0;
+	margin-inline: 5px;
+	scroll-margin: 5px;
+	width: calc(100% - 10px);
+	
+	@media (min-width: 440px) {
+		width: calc(100% / 2 - 10px);
+	}
+	
+	@media (min-width: 768px) {
+		width: calc(100% - 10px);
+	}
+	
+	@media (min-width: 1024px) {
+		width: calc(100% / 2 - 10px);
+	}
+	
+	@media (min-width: 1740px) {
+		width: calc(100% / 3 - 10px);
+	}
+/*
+	&:last-child {
+		margin-right: 0;
+	}
+*/
 	&:nth-child(odd) {
 		@apply bg-gradient-to-t;
 	}
 
 	img {
 		@apply rounded-md;
+		aspect-ratio: 1 / 1;
+		width: 100%;
 	}
 
 	h3 {
@@ -15,7 +41,7 @@
 
 	h4 {
 		@apply text-sm md:text-base mb-1;
-		
+
 		a {
 			@apply text-katt hover:underline;
 		}
